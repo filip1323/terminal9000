@@ -1,7 +1,8 @@
 myApp = angular.module('ManagerAspect', ['ngDragDrop']);
 myApp.controller('ManagerCtrl', ['$http','$compile', '$scope', function ($http, $compile, $scope) {
         var ctrl = this;
-        this.tables = [{id:0},{id:3}];
+        this.selectedTable = {};
+        this.tables = [];
         this.sendJSONData = function (header,data, onSucces) {
             var res = $http.post('/gastronomy-terminal/rest/' + header, JSON.stringify(data, null, 4));
                 res.success(function (incData, status, headers, config) {

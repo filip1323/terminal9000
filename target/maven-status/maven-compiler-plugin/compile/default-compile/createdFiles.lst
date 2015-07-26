@@ -1,7 +1,12 @@
-backend\DatabaseImpl.class
-ctrl\DomainClass.class
 editor\TableSetupImpl.class
+backend\MenuImpl.class
+backend\DatabaseImpl.class
+backend\OrderImpl.class
 backend\TableImpl.class
 ctrl\RESTController.class
 editor\DatabaseImpl.class
+backend\BillImpl.class
+backend\ProductImpl.class
+ctrl\MainController.class
+backend\ProductBuilderImpl.class
 ctrl\FrontController.class

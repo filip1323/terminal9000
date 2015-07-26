@@ -6,9 +6,4 @@ package backend;
 public interface Bill {
     int getPrice();
     Order getOrder();
-
-    interface BillBuilder {
-        void setPrice(int price);
-        void addOrder(Order order);
-    }
 }

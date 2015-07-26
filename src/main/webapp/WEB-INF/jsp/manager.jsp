@@ -13,11 +13,17 @@
     </head>
 
     <body id="manager">
-        <div id="view" ng-controller="ManagerCtrl as editor">
-            <div ng-repeat="table in editor.tables" class="table" style="position: absolute; width: {{table.width}}px;height: {{table.height}}px;top: {{table.yCoord}}px;left: {{table.xCoord}}px;">{{table.id}}</div>
+        <div id="view" ng-controller="ManagerCtrl as manager">
+            <div ng-repeat="table in manager.tables" class="table" style="position: absolute; width: {{table.width}}px;height: {{table.height}}px;top: {{table.yCoord}}px;left: {{table.xCoord}}px;">{{table.id}}</div>
         </div>
 
-        <div id="editor">
+        <div id="editor-ui" ng-controller="ManagerCtrl as manager">
+            <p>Table selected: {{editor.selectedTable.id}}</p>
+            <table>
+                <tr ng-repeat="product in manager.selectedTable.products">
+                    <td>{{$index}}<td>{{product.name}}</td><td>{{product.category}}</td><td>{{product.price}}</td>
+                </tr>
+            </table>
         </div>
     </body>
 
