@@ -1,0 +1,7 @@
+backend\DatabaseImpl.class
+ctrl\DomainClass.class
+editor\TableSetupImpl.class
+backend\TableImpl.class
+ctrl\RESTController.class
+editor\DatabaseImpl.class
+ctrl\FrontController.class
