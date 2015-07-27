@@ -1,9 +1,6 @@
 package ctrl;
 
-import backend.Database;
-import backend.MenuImpl;
-import backend.Product;
-import backend.Table;
+import backend.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -22,15 +19,34 @@ public class MainController {
     private Database database;
 
     private ArrayList<Table> tablesInUse;
+    private ArrayList<Order> ordersInUse;
     public void init(){
         System.out.println("Application has began");
         tablesInUse = database.getTableSetup();
+        ordersInUse = new ArrayList<Order>();
     }
 
-    public Table getTableWithId(String id) throws UnexpectedException{
+    public Table getTableWithId(String id){
         for(Table table : tablesInUse){
             if(table.getId().equals(id)) return table;
         }
+        System.out.println("NO TABLE WITH ID " + id);
+        return null;
+    }
+
+    public Order getOrderWithId(int id) throws UnexpectedException{
+        for(Order order : ordersInUse){
+            if(order.getId() == id) return order;
+        }
         throw new UnexpectedException("No table with id: " + id);
+    }
+
+    public Order createOrder(Table table){
+        table = getTableWithId(table.getId());
+        Order order = new OrderImpl();
+        order.setTable(table);
+        table.addOrder(order);
+        ordersInUse.add(order);
+        return order;
     }
 }

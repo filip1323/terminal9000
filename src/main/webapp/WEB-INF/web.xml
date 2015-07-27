@@ -38,6 +38,14 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>mvc-dispatcher</servlet-name>
+        <url-pattern>/rest/create-order</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>mvc-dispatcher</servlet-name>
+        <url-pattern>/rest/get-order</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>mvc-dispatcher</servlet-name>
         <url-pattern>/rest/single</url-pattern>
     </servlet-mapping>
 

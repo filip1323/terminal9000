@@ -1,5 +1,6 @@
 package backend;
 
+import java.rmi.UnexpectedException;
 import java.util.ArrayList;
 
 /**
@@ -7,6 +8,9 @@ import java.util.ArrayList;
  */
 public interface Order {
     void addProduct(Product product);
-    ArrayList<Product> getProducts();
+    void setTable(Table table);
+    int getId();
+    Table getTable() throws UnexpectedException;
     Bill getBill();
+    ArrayList<Product> getProducts();
 }

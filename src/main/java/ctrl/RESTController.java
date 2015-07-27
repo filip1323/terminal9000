@@ -1,8 +1,6 @@
 package ctrl;
 
-import backend.MenuImpl;
-import backend.Product;
-import backend.Table;
+import backend.*;
 import editor.TableSetupImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -43,9 +41,40 @@ public class RESTController {
     }
 
     @RequestMapping(value="/rest/get-table", method = RequestMethod.POST)
-    public @ResponseBody Table getTables(  @RequestBody String id ) throws UnexpectedException {
+    public @ResponseBody Table getTable(  @RequestBody String id ){
         backend.Database database = context.getBean("databaseManager", backend.Database.class);
         MainController controller = context.getBean("mainController", MainController.class);
-        return controller.getTableWithId(id);
+        Table table;
+
+        table =  controller.getTableWithId(id);
+
+        System.out.println("table given");
+        return table;
     }
+
+    @RequestMapping(value="/rest/create-order", method = RequestMethod.POST)
+    public @ResponseBody
+    void createOrder(  @RequestBody TableImpl table ){
+        MainController controller = context.getBean("mainController", MainController.class);
+
+        Order order = controller.createOrder(table);
+
+        System.out.println("Order created");
+    }
+
+    @RequestMapping(value="/rest/get-order", method = RequestMethod.POST)
+    public @ResponseBody
+    Order getOrder(  @RequestBody Integer orderId ){
+        MainController controller = context.getBean("mainController", MainController.class);
+        Order order = null;
+        try {
+            order = controller.getOrderWithId(orderId);
+        } catch (UnexpectedException e) {
+            e.printStackTrace();
+        }
+
+        return order;
+    }
+
+
 }

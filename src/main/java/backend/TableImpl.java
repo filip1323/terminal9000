@@ -9,25 +9,27 @@ import java.util.ArrayList;
  */
 public class TableImpl extends TableSetupImpl implements Table {
 
-    ArrayList<Order> orders;
+    public ArrayList<Integer> ordersId = new ArrayList<Integer>();
 
     public TableImpl(){
-        this.orders = new ArrayList<Order>();
+        this.ordersId = new ArrayList<Integer>();
     }
 
     @Override
     public ArrayList<Order> getOrders() {
-        return orders;
+        return null;
     }
 
     @Override
     public void addOrder(Order order) {
-        this.orders.add(order);
+        System.out.println(ordersId);
+        this.ordersId.add(order.getId());
+        System.out.println(ordersId);
     }
 
     @Override
     public void clearOrder(Order order) {
-        this.orders.remove(order);
+        this.ordersId.remove(order.getId());
     }
 
 }

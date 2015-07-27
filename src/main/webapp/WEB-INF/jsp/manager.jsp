@@ -19,7 +19,7 @@
 
         <div id="manager-ui">
             <p>Table selected id: {{manager.selectedTable.id}}<u ng-show="manager.selectedTable.id == null">none</u></p>
-            <a href="#">Dodaj zamowienie</a>
+            <a ng-show="manager.selectedTable.id != null" href="#" ng-click="manager.createOrder()">Dodaj zamowienie</a>
             <table ng-repeat="order in manager.selectedTable.orders">
                 <tr ng-repeat="product in order.products">
                     <td>{{$index}}<td>{{product.name}}</td><td>{{product.category}}</td><td>{{product.price}}</td>

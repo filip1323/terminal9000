@@ -1,27 +1,44 @@
 package backend;
 
+import ctrl.MainController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+
+import java.rmi.UnexpectedException;
+
 /**
  * Created by Filip on 2015-07-26.
  */
 public class BillImpl implements Bill {
 
-    private Order order;
+    private int orderId;
+
+    @Autowired
+    private ApplicationContext context;
 
     public BillImpl(Order order){
-        this.order = order;
+        this.orderId = order.getId();
     }
 
     @Override
     public int getPrice() {
 
         int price = 0;
-        for(Product product : order.getProducts()) price += product.getPrice();
+        for(Product product : getOrder().getProducts()) price += product.getPrice();
         return price;
 
     }
 
     @Override
     public Order getOrder() {
-        return order;
+        MainController controller = context.getBean("mainController", MainController.class);
+
+
+        try {
+            return controller.getOrderWithId(orderId);
+        } catch (UnexpectedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
