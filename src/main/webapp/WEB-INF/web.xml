@@ -26,14 +26,23 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>mvc-dispatcher</servlet-name>
-        <url-pattern>/rest/gettables</url-pattern>
+        <url-pattern>/rest/save-table-setups</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>mvc-dispatcher</servlet-name>
-        <url-pattern>/rest/multi</url-pattern>
+        <url-pattern>/rest/get-tables</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>mvc-dispatcher</servlet-name>
+        <url-pattern>/rest/get-table</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>mvc-dispatcher</servlet-name>
         <url-pattern>/rest/single</url-pattern>
     </servlet-mapping>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
 </web-app>

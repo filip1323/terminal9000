@@ -1,8 +1,14 @@
 myApp = angular.module('ManagerAspect', ['ngDragDrop']);
-myApp.controller('ManagerCtrl', ['$http','$compile', '$scope', function ($http, $compile, $scope) {
+myApp.controller('ManagerCtrl', ['$http','$compile', '$scope','$timeout', function ($http, $compile, $scope, $timeout) {
         var ctrl = this;
         this.selectedTable = {};
         this.tables = [];
+        this.setAsSelected = function(id){
+            //alert(ctrl.selectedTable.id);
+            this.sendJSONData("get-table", parseInt(id), function(incData){
+                ctrl.selectedTable = incData;
+            });
+        }
         this.sendJSONData = function (header,data, onSucces) {
             var res = $http.post('/gastronomy-terminal/rest/' + header, JSON.stringify(data, null, 4));
                 res.success(function (incData, status, headers, config) {
@@ -20,7 +26,7 @@ myApp.controller('ManagerCtrl', ['$http','$compile', '$scope', function ($http, 
                 $("#room").html(incData);
             });
         }
-        this.sendJSONData("gettables",[], function(newTables){
+        this.sendJSONData("get-tables",[], function(newTables){
             ctrl.tables = newTables;
         });
 

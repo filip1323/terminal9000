@@ -4,10 +4,13 @@ import backend.MenuImpl;
 import backend.Product;
 import backend.Table;
 import editor.TableSetupImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.web.bind.annotation.*;
 
+import java.rmi.UnexpectedException;
 import java.util.List;
 
 /**
@@ -17,20 +20,12 @@ import java.util.List;
 @RequestMapping(value = "/rest/*")
 public class RESTController {
 
+    @Autowired
+    private ApplicationContext context;
 
-    @RequestMapping(value="/rest/single", method = RequestMethod.POST)
-    public @ResponseBody TableSetupImpl singleTable( @RequestBody final TableSetupImpl tableSetup) {
-        System.out.println("REST CONTROLLER REQUEST SINGLE");
-        //for(TableSetupImpl tableSetup : tableSetups)
-        //   DatabaseImpl.getInstance().addTableSetup(tableSetup);
-        //System.out.println(tableSetup);
-        return tableSetup;
-    }
+    @RequestMapping(value="/rest/save-table-setups", method = RequestMethod.POST)
+    public @ResponseBody List<TableSetupImpl> saveTableSetups( @RequestBody final List<TableSetupImpl> tableSetups) {
 
-    @RequestMapping(value="/rest/multi", method = RequestMethod.POST)
-    public @ResponseBody List<TableSetupImpl> multipleTables( @RequestBody final List<TableSetupImpl> tableSetups) {
-        System.out.println("REST CONTROLLER REQUEST MULTI");
-        ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
         editor.Database database = context.getBean("databaseEditor", editor.Database.class);
         for(TableSetupImpl tableSetup : tableSetups)
            database.addTableSetup(tableSetup);
@@ -38,14 +33,19 @@ public class RESTController {
         return tableSetups;
     }
 
-    @RequestMapping(value="/rest/gettables", method = RequestMethod.POST)
+    @RequestMapping(value="/rest/get-tables", method = RequestMethod.POST)
     public @ResponseBody List<Table> getTables(  @RequestBody List<Table> incoming ) {
-        System.out.println("REST CONTROLLER REQUEST GETTABLES");
-        ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
         backend.Database database = context.getBean("databaseManager", backend.Database.class);
 
         incoming = database.getTableSetup();
 
         return incoming;
+    }
+
+    @RequestMapping(value="/rest/get-table", method = RequestMethod.POST)
+    public @ResponseBody Table getTables(  @RequestBody String id ) throws UnexpectedException {
+        backend.Database database = context.getBean("databaseManager", backend.Database.class);
+        MainController controller = context.getBean("mainController", MainController.class);
+        return controller.getTableWithId(id);
     }
 }

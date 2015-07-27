@@ -12,18 +12,23 @@
         <script src="resources/js/manager.js"></script>
     </head>
 
-    <body id="manager">
-        <div id="view" ng-controller="ManagerCtrl as manager">
-            <div ng-repeat="table in manager.tables" class="table" style="position: absolute; width: {{table.width}}px;height: {{table.height}}px;top: {{table.yCoord}}px;left: {{table.xCoord}}px;">{{table.id}}</div>
+    <body id="manager" ng-controller="ManagerCtrl as manager">
+        <div id="view" >
+            <div ng-repeat="table in manager.tables" ng-click="manager.setAsSelected(table.id)" class="table" style="position: absolute; width: {{table.width}}px;height: {{table.height}}px;top: {{table.yCoord}}px;left: {{table.xCoord}}px;">{{table.id}}</div>
         </div>
 
-        <div id="editor-ui" ng-controller="ManagerCtrl as manager">
-            <p>Table selected: {{editor.selectedTable.id}}</p>
-            <table>
-                <tr ng-repeat="product in manager.selectedTable.products">
+        <div id="manager-ui">
+            <p>Table selected id: {{manager.selectedTable.id}}<u ng-show="manager.selectedTable.id == null">none</u></p>
+            <a href="#">Dodaj zamowienie</a>
+            <table ng-repeat="order in manager.selectedTable.orders">
+                <tr ng-repeat="product in order.products">
                     <td>{{$index}}<td>{{product.name}}</td><td>{{product.category}}</td><td>{{product.price}}</td>
                 </tr>
             </table>
+        </div>
+        <div id="orders-ui">
+            <p>Zamowienie</p>
+
         </div>
     </body>
 

@@ -42,3 +42,22 @@ body{
 #manager .table{
     position:absolute;
 }
+#manager-ui{
+    position: absolute;
+    left: 805px;
+    width: 350px;
+    top: 0;
+    background: red;
+    background: #eee;
+    border-right: 5px solid #ddd;
+    border-bottom: 5px solid #ddd;
+}
+#orders-ui{
+    position: absolute;
+    left: 1160px;
+    width: 350px;
+    top: 0;
+    background: #eee;
+    border-right: 5px solid #ddd;
+    border-bottom: 5px solid #ddd;
+}

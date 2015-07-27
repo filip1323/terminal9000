@@ -27,9 +27,10 @@ myApp.controller('EditCtrl', ['$http','$compile', '$scope', function ($http, $co
                 var tableJSON = {id: i, xCoord: parseInt(element.offset().left), yCoord: parseInt(element.offset().top), width: parseInt(element.css("width")), height: parseInt(element.css("height"))};
                 dataToSend.push(tableJSON);
             }
-           this.sendJSONData("multi", dataToSend);
+           this.sendJSONData("save-table-setups", dataToSend);
         }
 
+''
         this.addTable = function () {
             var element = "<div class='table' data-drag='true' jqyoui-draggable>lolcontent " + document.getElementsByClassName("table").length + "</div>";
             var newElement = ($compile(element)($scope));
