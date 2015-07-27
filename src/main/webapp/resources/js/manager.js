@@ -2,10 +2,20 @@ myApp = angular.module('ManagerAspect', ['ngDragDrop']);
 myApp.controller('ManagerCtrl', ['$http','$compile', '$scope','$timeout', function ($http, $compile, $scope, $timeout) {
         var ctrl = this;
         this.selectedTable = {};
+        this.selectedOrder = {id:null,products:[]};
         this.tables = [];
         this.setAsSelected = function(id){
-            this.sendJSONData("get-table", parseInt(id), function(incData){
+            ctrl.sendJSONData("get-table", parseInt(id), function(incData){
                 ctrl.selectedTable = incData;
+                ctrl.sendJSONData("get-orders", parseInt(parseInt(ctrl.selectedTable.id)), function(incData){
+                    ctrl.selectedTable.orders = incData;
+                });
+            });
+        }
+        this.selectOrder = function(id){
+            ctrl.selectedOrder.id = id;
+            ctrl.sendJSONData("get-products", parseInt(id), function(incData){
+                ctrl.selectedOrder.products = incData;
             });
         }
         this.createOrder = function(){
@@ -21,7 +31,6 @@ myApp.controller('ManagerCtrl', ['$http','$compile', '$scope','$timeout', functi
                 console.log(status);
                 console.log(headers);
                 console.log(config);
-                $("#room").html(incData);
                 onSucces(incData);
             });
             res.error(function (incData, status, headers, config) {

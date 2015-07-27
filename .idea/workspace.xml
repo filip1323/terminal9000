@@ -3,22 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="ebed578c-1c64-4f99-8a9c-ef9dffa80fc4" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Users\Filip\IdeaProjects\gastronomy-terminal\target\classes\ctrl\DomainClass.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/backend/BillImpl.class" afterPath="$PROJECT_DIR$/target/classes/backend/BillImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ctrl/MainController.class" afterPath="$PROJECT_DIR$/target/classes/ctrl/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/backend/Order.class" afterPath="$PROJECT_DIR$/target/classes/backend/Order.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/backend/OrderImpl.class" afterPath="$PROJECT_DIR$/target/classes/backend/OrderImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ctrl/RESTController.class" afterPath="$PROJECT_DIR$/target/classes/ctrl/RESTController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/backend/TableImpl.class" afterPath="$PROJECT_DIR$/target/classes/backend/TableImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/gastronomy-terminal/org/apache/jsp/WEB_002dINF/jsp/manager_jsp.class" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/gastronomy-terminal/org/apache/jsp/WEB_002dINF/jsp/manager_jsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/backend/BillImpl.java" afterPath="$PROJECT_DIR$/src/main/java/backend/BillImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ctrl/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/ctrl/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/backend/Order.java" afterPath="$PROJECT_DIR$/src/main/java/backend/Order.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/backend/OrderImpl.java" afterPath="$PROJECT_DIR$/src/main/java/backend/OrderImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ctrl/RESTController.java" afterPath="$PROJECT_DIR$/src/main/java/ctrl/RESTController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/backend/TableImpl.java" afterPath="$PROJECT_DIR$/src/main/java/backend/TableImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2015-07-27" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2015-07-27" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/gastronomy-terminal/org/apache/jsp/WEB_002dINF/jsp/editor_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/gastronomy-terminal/org/apache/jsp/WEB_002dINF/jsp/editor_jsp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/manager.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/manager.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/manager.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/manager.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/gastronomy-terminal/org/apache/jsp/WEB_002dINF/jsp/manager_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/gastronomy-terminal/org/apache/jsp/WEB_002dINF/jsp/manager_jsp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -43,71 +44,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RESTController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ctrl/RESTController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60104984">
-              <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TableImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/backend/TableImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding>
-                <element signature="e#241#250#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#390#391#0" expanded="true" />
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#653#654#0" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ctrl/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Table.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/backend/Table.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="manager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/manager.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="45" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.35602096">
+              <caret line="41" column="80" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editor.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editor.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manager.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/manager.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -135,8 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/edu/PeriodicReport.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/BillBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/Bill.java" />
@@ -164,28 +133,30 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/editor/DatabaseImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/Table.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editor.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/backend/ProductBuilderImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/ProductImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/BillBuilderImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/MenuImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/Menu.java" />
         <option value="$PROJECT_DIR$/src/main/java/ctrl/FrontController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/java/ctrl/AppContextAwareImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/context.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/backend/Bill.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/DatabaseImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/manager.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/backend/OrderImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/BillImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/manager.js" />
+        <option value="$PROJECT_DIR$/src/main/java/side/OrderList.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ctrl/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/backend/TableImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ctrl/RESTController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/backend/OrderImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ctrl/RESTController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/manager.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/manager.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editor.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
       </list>
     </option>
   </component>
@@ -293,6 +264,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -548,7 +520,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -564,6 +535,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Filip/IdeaProjects/gastronomy-terminal/src/main/webapp/resources/js/manager.js" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -813,12 +785,12 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2488189" sideWeight="0.5117647" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33662614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34954408" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33169934" sideWeight="0.4882353" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33115825" sideWeight="0.4882353" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21808511" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21732523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -853,10 +825,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/manager.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ctrl/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="95" selection-start-line="20" selection-start-column="95" selection-end-line="20" selection-end-column="95" />
+          <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -1102,40 +1074,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editor.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09848485">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33242506">
-          <caret line="56" column="30" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/backend/Bill.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,54 +1085,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61614496">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/manager.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7454068">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/backend/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/backend/OrderImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="56" selection-start-line="51" selection-start-column="56" selection-end-line="52" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/backend/BillImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65091866">
-          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.3115183">
+          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -1198,15 +1099,23 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ctrl/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/backend/Table.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/backend/BillImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/backend/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40052357">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1214,34 +1123,85 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/backend/TableImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
-            <element signature="e#241#250#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#548#555#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/backend/OrderImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="15" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.5104712">
+          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ctrl/RESTController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60104984">
-          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="68" selection-start-line="92" selection-start-column="68" selection-end-line="92" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/backend/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/manager.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editor.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="45" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35602096">
+          <caret line="41" column="80" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
+          <folding />
         </state>
       </provider>
     </entry>

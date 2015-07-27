@@ -13,6 +13,7 @@
 
     <bean id="mainController" init-method="init" class="ctrl.MainController" lazy-init="false"/>
 
+    <bean id="order" class="backend.OrderImpl" scope="prototype"/>
 
     <bean id="databaseEditor" class="editor.DatabaseImpl">
         <constructor-arg name="dataSource" ref="dataSource"/>

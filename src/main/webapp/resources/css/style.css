@@ -5,6 +5,9 @@ body{
     padding: 0;
     font-family: Verdana;
 }
+body > div > *{
+    padding: 10px;
+}
 #view{
     height: 500px;
     width: 800px;
@@ -60,4 +63,7 @@ body{
     background: #eee;
     border-right: 5px solid #ddd;
     border-bottom: 5px solid #ddd;
+}
+.order{
+    background: #ccc;
 }

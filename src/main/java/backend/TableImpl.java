@@ -1,7 +1,13 @@
 package backend;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import ctrl.MainController;
 import editor.TableSetupImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.rmi.UnexpectedException;
 import java.util.ArrayList;
 
 /**
@@ -9,27 +15,22 @@ import java.util.ArrayList;
  */
 public class TableImpl extends TableSetupImpl implements Table {
 
-    public ArrayList<Integer> ordersId = new ArrayList<Integer>();
+    private ArrayList<Order> orders = new ArrayList<Order>();
 
-    public TableImpl(){
-        this.ordersId = new ArrayList<Integer>();
-    }
-
+    @JsonIgnore
     @Override
     public ArrayList<Order> getOrders() {
-        return null;
+        return orders;
     }
 
     @Override
     public void addOrder(Order order) {
-        System.out.println(ordersId);
-        this.ordersId.add(order.getId());
-        System.out.println(ordersId);
+        this.orders.add(order);
     }
 
     @Override
     public void clearOrder(Order order) {
-        this.ordersId.remove(order.getId());
+        this.orders.remove(order);
     }
 
 }

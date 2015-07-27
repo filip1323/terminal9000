@@ -1,5 +1,6 @@
 package backend;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import ctrl.MainController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -38,6 +39,7 @@ public class OrderImpl implements Order {
         this.tableId = table.getId();
     }
 
+    @JsonIgnore
     @Override
     public ArrayList<Product> getProducts() {
         return products;
@@ -48,12 +50,14 @@ public class OrderImpl implements Order {
         return this.id;
     }
 
+    @JsonIgnore
     @Override
     public Table getTable() throws UnexpectedException {
         MainController controller = context.getBean("mainController", MainController.class);
         return controller.getTableWithId(tableId);
     }
 
+    @JsonIgnore
     @Override
     public Bill getBill() {
         return this.bill;

@@ -38,12 +38,13 @@ public class MainController {
         for(Order order : ordersInUse){
             if(order.getId() == id) return order;
         }
+        System.out.println("NO ORDER WITH ID: " + id);
         throw new UnexpectedException("No table with id: " + id);
     }
 
     public Order createOrder(Table table){
         table = getTableWithId(table.getId());
-        Order order = new OrderImpl();
+        Order order = context.getBean("order", OrderImpl.class);
         order.setTable(table);
         table.addOrder(order);
         ordersInUse.add(order);

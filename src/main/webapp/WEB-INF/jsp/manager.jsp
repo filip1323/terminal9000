@@ -20,14 +20,18 @@
         <div id="manager-ui">
             <p>Table selected id: {{manager.selectedTable.id}}<u ng-show="manager.selectedTable.id == null">none</u></p>
             <a ng-show="manager.selectedTable.id != null" href="#" ng-click="manager.createOrder()">Dodaj zamowienie</a>
-            <table ng-repeat="order in manager.selectedTable.orders">
+            <table class="order" ng-repeat="order in manager.selectedTable.orders">
+                <caption><a href="#" ng-click="manager.selectOrder(order.id)">order &#35{{order.id}}</a></caption>
+                <th>
+                    <td>index</td><td>name</td><category</td><td>price</td>
+                </th>
                 <tr ng-repeat="product in order.products">
-                    <td>{{$index}}<td>{{product.name}}</td><td>{{product.category}}</td><td>{{product.price}}</td>
+                    <td>{{$index}}</td><td>{{product.name}}</td><td>{{product.category}}</td><td>{{product.price}}</td>
                 </tr>
             </table>
         </div>
         <div id="orders-ui">
-            <p>Zamowienie</p>
+            <p>Order &#35{{manager.selectedOrder.id}}</p>
 
         </div>
     </body>

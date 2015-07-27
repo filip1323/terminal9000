@@ -1,24 +1,25 @@
+
 myApp = angular.module('EditorAspect', ['ngDragDrop']);
 myApp.controller('EditCtrl', ['$http','$compile', '$scope', function ($http, $compile, $scope) {
-        this.sendJSONData = function (header,data) {
-            var res = $http.post('/gastronomy-terminal/rest/' + header, JSON.stringify(data, null, 4));
-                res.success(function (incData, status, headers, config) {
-                console.log("SUCCES");
-                console.log(incData);
-                console.log(status);
-                console.log(headers);
-                console.log(config);
-                $("#room").html(incData);
-            });
-            res.error(function (incData, status, headers, config) {
-                console.log("FAILURE");
-                console.log(incData);
-                console.log(status);
-                console.log(headers);
-                console.log(config);
-                $("#room").html(incData);
-            });
-        }
+
+        this.sendJSONData = function (header,data, onSucces) {
+                    var res = $http.post('/gastronomy-terminal/rest/' + header, JSON.stringify(data, null, 4));
+                        res.success(function (incData, status, headers, config) {
+                        console.log("SUCCES");
+                        console.log(incData);
+                        console.log(status);
+                        console.log(headers);
+                        console.log(config);
+                        onSucces(incData);
+                    });
+                    res.error(function (incData, status, headers, config) {
+                        console.log("FAILURE");
+                        console.log(incData);
+                        console.log(status);
+                        console.log(headers);
+                        console.log(config);
+                    });
+                }
         this.saveTables = function () {
             var elements = document.getElementsByClassName("table");
             var dataToSend = [];
@@ -28,11 +29,17 @@ myApp.controller('EditCtrl', ['$http','$compile', '$scope', function ($http, $co
                 dataToSend.push(tableJSON);
             }
            this.sendJSONData("save-table-setups", dataToSend);
-        }
 
-''
+        }
+        var ctrl = this;
+        this.tables = [];
+         this.sendJSONData("get-tables",[], function(newTables){
+                        ctrl.tables = newTables;
+                    });
+
+
         this.addTable = function () {
-            var element = "<div class='table' data-drag='true' jqyoui-draggable>lolcontent " + document.getElementsByClassName("table").length + "</div>";
+            var element = "<div class='table' data-drag='true' jqyoui-draggable>" + document.getElementsByClassName("table").length + "</div>";
             var newElement = ($compile(element)($scope));
             $('#editor').append(newElement);
             applyGridControl($('#editor').children().last()[0]);
@@ -47,6 +54,7 @@ myApp.controller('EditCtrl', ['$http','$compile', '$scope', function ($http, $co
             //$scope.$apply();
         };
     }]).run(function ($rootScope, $compile, $rootElement) {
+
     applyGridControl($(".table"));
 });
 function applyGridControl(element) {

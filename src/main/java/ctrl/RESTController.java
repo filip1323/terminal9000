@@ -9,6 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.web.bind.annotation.*;
 
 import java.rmi.UnexpectedException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -74,6 +75,26 @@ public class RESTController {
         }
 
         return order;
+    }
+
+    @RequestMapping(value="/rest/get-orders", method = RequestMethod.POST)
+    public @ResponseBody
+    ArrayList<Order> getOrders(  @RequestBody String tableId ){
+        System.out.println(tableId);
+        MainController controller = context.getBean("mainController", MainController.class);
+        return controller.getTableWithId(tableId).getOrders();
+    }
+
+    @RequestMapping(value="/rest/get-products", method = RequestMethod.POST)
+    public @ResponseBody
+    ArrayList<Product> getProducts( @RequestBody Integer orderId ){
+        MainController controller = context.getBean("mainController", MainController.class);
+        try {
+            return controller.getOrderWithId(orderId).getProducts();
+        } catch (UnexpectedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
 
